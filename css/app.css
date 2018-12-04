@@ -1,0 +1,81 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.home-section {
+  overflow-x: hidden;
+}
+
+.main-content {
+  margin-top: 6.5rem;
+  background: url('../img/main.jpg');
+  background-size: 50% 50%;
+  height: 89.8vh;
+  transition: all .7s;
+}
+
+.dark-overlay {
+  height: inherit;
+  transition: all .7s;
+}
+
+.navbar-brand {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  letter-spacing: .8rem;
+  animation: showIn 2s ease-in-out;
+}
+
+.curr-nav-link, .list-group-item {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 6.5rem;
+  width: 19.2rem;
+  height: 89.8vh;
+  overflow-y: auto;
+  transition: all .7s;
+}
+
+.sidebar-hidden .sidebar {
+  transform: translateX(-19.2rem);
+}
+
+.shift-section {
+  transform: translateX(12.8rem);
+}
+
+.add-overlay {
+  background-color: rgba(0,0,0,.8);
+}
+
+@keyframes showIn {
+  0% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
